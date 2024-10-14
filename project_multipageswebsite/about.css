@@ -1,0 +1,251 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#hero {
+  width: 100%;
+  height: 250px;
+  padding-bottom: 0px;
+  background-color: #2a2a2a;
+}
+
+#navbar {
+  display: flex;
+  top: 0px;
+  justify-content: space-between;
+}
+#navbar .navsection {
+  position: relative;
+  top: 20px;
+}
+#navbar .navsection ul .list2 :hover {
+  border-bottom: 2px solid red;
+}
+#navbar .navsection2 {
+  position: relative;
+  top: 20px;
+}
+#navbar div ul {
+  display: flex;
+  margin-top: 2px;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+}
+#navbar div ul :hover {
+  border-bottom: #ffffff;
+}
+#navbar div ul li {
+  position: relative; /* Necessary for absolute positioning of dropdown */
+}
+#navbar div ul #dropdown {
+  display: none;
+}
+#navbar div ul #dropdown ul {
+  display: block;
+  width: 160px;
+}
+#navbar div ul #dropdown ul li a {
+  font-size: 12px;
+}
+#navbar div ul li:hover #dropdown {
+  display: block;
+  position: absolute;
+  z-index: 333;
+  background-color: grey;
+  width: 170px;
+  height: 230px;
+  font-size: 3px;
+}
+#navbar div ul ul {
+  margin: 0px;
+  padding: 0px;
+}
+#navbar div ul ul li {
+  display: block;
+  padding: 20px;
+}
+#navbar div :hover {
+  color: red;
+}
+#navbar div a {
+  color: #ffffff;
+  font: 20px overpass, sans-serif;
+  padding: 9px 14px;
+  text-decoration: none;
+}
+#navbar div a span {
+  position: relative;
+  top: 5px;
+}
+
+#aboutbox {
+  position: relative;
+  top: -60px;
+  width: 75%;
+  left: 160px;
+  justify-content: center;
+  background-color: #747473;
+}
+#aboutbox h1 {
+  text-align: center;
+  padding: 80px 10px;
+  font-size: 45px;
+  color: #ffffff;
+}
+
+#outer {
+  margin-top: px;
+  background-image: url(./image/aboutimage.jpg);
+}
+#outer div h2 {
+  opacity: 0.6;
+}
+#outer div h3 {
+  opacity: 0.7;
+  font-size: 26px;
+}
+#outer div h4 {
+  opacity: 0.6;
+}
+#outer div button {
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+}
+#outer #aboutimage {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 150px;
+  position: relative;
+  left: 45px;
+  transition: all 300ms;
+}
+#outer #aboutimage img {
+  width: 350px;
+  justify-content: space-evenly;
+}
+#outer #aboutimage :hover {
+  transform: scale(1.05);
+}
+
+#author {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 150px;
+  left: 45px;
+  margin: 50px;
+}
+#author .imgauthor {
+  width: 350px;
+  height: 450px;
+  box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, 0.2);
+  text-align: center;
+  transition: all 2ms;
+}
+#author .imgauthor :hover img {
+  transform: scale(1.5);
+}
+#author .imgauthor img {
+  padding: 10px;
+}
+#author #text1 {
+  width: 300px;
+  position: relative;
+  left: 2px;
+  top: 15px;
+}
+#author #text1 h1 {
+  font-size: 30px;
+}
+#author #text1 h2 {
+  opacity: 0.6;
+}
+#author #text1 h4 {
+  opacity: 0.7;
+  font-size: 23px;
+}
+#author #text1 p {
+  opacity: 0.6;
+}
+#author #text1 div button {
+  width: 150px;
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+  margin-left: -10px;
+}
+#author #text1 div :hover {
+  background-color: #AFE6C3;
+  transform: scale(1.05);
+}
+
+#footer {
+  margin-top: 80px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 100px);
+  grid-gap: 120px;
+  width: 100%;
+  background-color: #2a2a2a;
+  justify-content: space-around;
+}
+#footer div h1 {
+  position: relative;
+  left: -13px;
+  color: #ffffff;
+  padding: 20px;
+}
+#footer div h3 {
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding: 5px;
+}
+#footer div ul {
+  display: flex;
+  left: px;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.footer2 {
+  margin-top: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: #2a2a2a;
+}
+.footer2 #line {
+  background-color: #C2FBD7;
+  height: 1px;
+  opacity: 0.3;
+}
+.footer2 div {
+  position: relative;
+  text-align: center;
+}
+.footer2 div img {
+  width: 150px;
+  height: 40px;
+}/*# sourceMappingURL=about.css.map */

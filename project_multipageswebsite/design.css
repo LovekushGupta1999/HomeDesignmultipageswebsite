@@ -1,0 +1,425 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+#hero {
+  width: 100%;
+  height: 600px;
+  padding-bottom: 0px;
+  background-color: #2a2a2a;
+}
+#hero #navbar {
+  display: flex;
+  top: 0px;
+  justify-content: space-between;
+}
+#hero #navbar .navsection {
+  position: relative;
+  top: 20px;
+}
+#hero #navbar .navsection ul .list2 :hover {
+  border-bottom: 2px solid red;
+}
+#hero #navbar .navsection2 {
+  position: relative;
+  top: 20px;
+}
+#hero #navbar div ul {
+  display: flex;
+  margin-top: 2px;
+  align-items: center;
+  list-style-type: none;
+  padding: 10px;
+}
+#hero #navbar div ul li {
+  position: relative; /* Necessary for absolute positioning of dropdown */
+}
+#hero #navbar div ul #dropdown {
+  display: none;
+}
+#hero #navbar div ul #dropdown ul {
+  display: block;
+  width: 160px;
+}
+#hero #navbar div ul #dropdown ul li a {
+  font-size: 12px;
+}
+#hero #navbar div ul li:hover #dropdown {
+  display: block;
+  position: absolute;
+  z-index: 333;
+  background-color: grey;
+  width: 170px;
+  height: 200px;
+  font-size: 3px;
+}
+#hero #navbar div ul ul {
+  margin: 0px;
+  padding: 0px;
+}
+#hero #navbar div ul ul li {
+  display: block;
+  padding: 20px;
+}
+#hero #navbar div :hover {
+  color: red;
+}
+#hero #navbar div a {
+  color: #ffffff;
+  font: 20px overpass, sans-serif;
+  padding: 9px 14px;
+  text-decoration: none;
+}
+#hero #navbar div a span {
+  position: relative;
+  top: 5px;
+}
+
+#banner {
+  display: flex;
+  justify-content: center;
+  left: 50px;
+  width: 80%;
+  height: 300px;
+  margin: 50px;
+  margin-left: 120px;
+  padding: 10px;
+}
+#banner div {
+  margin: 0px;
+  padding: 0px;
+  width: auto;
+}
+#banner div img {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  opacity: 0.5;
+}
+#banner #text {
+  position: absolute;
+  top: 300px;
+  left: 170px;
+  z-index: 99;
+}
+#banner #text :hover {
+  opacity: 1;
+  color: #ffffff;
+}
+#banner #text h1 {
+  color: #ffffff;
+  text-align: right;
+  font-size: 50px;
+}
+#banner #text h3 {
+  color: rgba(255, 255, 255, 0.8);
+  text-align: right;
+  font-size: 30px;
+}
+#banner #text h5 {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: right;
+  font-size: 20px;
+}
+#banner #text div {
+  margin-left: 400px;
+}
+#banner #text div button {
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+}
+#banner #text div :hover {
+  background-color: #AFE6C3;
+  transform: scale(1.05);
+}
+
+#design {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  gap: 50px;
+  margin-left: 150px;
+  top: 550px;
+}
+#design :hover {
+  background-color: black;
+  color: #ffffff;
+  transform: scale(1.04);
+}
+#design div {
+  width: 220px;
+  height: 300px;
+  padding: 15px;
+  background-color: #ffffff;
+  text-align: center;
+}
+#design div img {
+  width: 100px;
+}
+
+#midsection {
+  width: 100%;
+  height: 330px;
+  margin-top: 320px;
+  margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-gap: 20px;
+}
+#midsection #image1 {
+  position: relative;
+  left: 100px;
+}
+#midsection #image1 img {
+  width: 350px;
+  height: 300px;
+}
+#midsection #image2 {
+  position: relative;
+  left: -170px;
+  top: 70px;
+  width: 150px;
+  height: 30px;
+}
+#midsection #text1 {
+  width: 350px;
+  position: relative;
+  left: 40px;
+  top: 20px;
+}
+#midsection #text1 h1 {
+  font-size: 30px;
+}
+#midsection #text1 h2 {
+  opacity: 0.6;
+}
+#midsection #text1 h4 {
+  opacity: 0.7;
+  font-size: 23px;
+}
+#midsection #text1 p {
+  opacity: 0.6;
+}
+#midsection #text1 button {
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+  left: 500px;
+}
+#midsection #text1 :hover {
+  background-color: #AFE6C3;
+  transform: scale(1.05);
+}
+
+#brand {
+  margin-top: 200px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 180px);
+  grid-gap: 20px;
+  justify-content: center;
+}
+#brand img {
+  height: 1cm;
+  width: 100px;
+}
+
+#Research {
+  margin: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  width: 80%;
+  margin: 50px 0px 50px 155px;
+}
+#Research #quates {
+  position: relative;
+  top: 100px;
+  right: 50px;
+  height: 210px;
+  width: 500px;
+  border: 1px solid black;
+  background-color: #2a2a2a;
+  z-index: 9999;
+}
+#Research #quates h1 {
+  position: relative;
+  left: 5px;
+  font-size: 100px;
+  opacity: 0.6;
+}
+#Research #quates h4 {
+  position: relative;
+  color: white;
+  opacity: 0.8;
+  top: -70px;
+  left: 2px;
+  font: 28px overpass sans-serif;
+}
+#Research div img {
+  height: 400px;
+  width: 300px;
+}
+
+#info {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-gap: 30px;
+}
+#info .love {
+  margin-left: 155px;
+  width: calc(40% - 15px);
+  height: 400px;
+}
+#info .love h1 {
+  font-size: 30px;
+}
+#info .love h2 {
+  opacity: 0.6;
+}
+#info .love h4 {
+  opacity: 0.7;
+  font-size: 23px;
+}
+#info .love p {
+  opacity: 0.6;
+}
+#info .love button {
+  background-color: #C2FBD7;
+  border-radius: 50px;
+  border-width: 0;
+  box-shadow: rgba(25, 25, 25, 0.04) 0 0 1px 0, rgba(0, 0, 0, 0.1) 0 3px 4px 0;
+  color: #008000;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, sans-serif;
+  font-size: 1em;
+  height: 50px;
+  padding: 0 25px;
+  transition: all 200ms;
+  left: 500px;
+}
+#info .love :hover {
+  background-color: #AFE6C3;
+  transform: scale(1.05);
+}
+#info .perbars {
+  width: calc(60% - 15px);
+}
+#info .perbars .bars {
+  width: 500px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: #2a2a2a;
+  margin: 45px 10px;
+}
+#info .perbars .bars span {
+  position: relative;
+  left: 500px;
+  top: -12px;
+}
+#info .perbars .bars #stylebar1 {
+  width: 92%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #41ad69;
+}
+#info .perbars .bars #stylebar1 .per {
+  position: relative;
+}
+#info .perbars .bars #stylebar2 {
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #41ad69;
+}
+#info .perbars .bars #stylebar3 {
+  width: 96%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: #41ad69;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 130px);
+  grid-gap: 150px;
+  background-color: #2a2a2a;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#footer div h1 {
+  position: relative;
+  left: -13px;
+  color: #ffffff;
+  padding: 20px;
+}
+#footer div h3 {
+  opacity: 0.6;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 16px;
+  padding: 5px;
+}
+#footer div ul {
+  display: flex;
+  left: px;
+  list-style-type: none;
+  gap: 10px;
+}
+
+.footer2 {
+  margin-top: 0px;
+  height: 200px;
+  width: 100%;
+  background-color: #2a2a2a;
+}
+.footer2 #line {
+  background-color: #C2FBD7;
+  height: 1px;
+  opacity: 0.3;
+}
+.footer2 div {
+  position: relative;
+  text-align: center;
+}
+.footer2 div img {
+  width: 150px;
+  height: 40px;
+}
+
+@media (max-width: 996px) {
+  #Research {
+    flex-direction: column;
+  }
+  .navsection {
+    display: none;
+  }
+  #banner text div button {
+    position: relative;
+    left: -300px;
+  }
+}/*# sourceMappingURL=design.css.map */
